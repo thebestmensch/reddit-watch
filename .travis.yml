@@ -1,0 +1,12 @@
+language: python
+python:
+  - "2.6"
+  - "2.7"
+# command to install dependencies
+install: 
+  - pip install python-coveralls nose coverage
+# command to run tests
+script: 
+#  - nosetests --with-coverage --cover-package api/routes.py
+after_success:
+  - "coveralls"
