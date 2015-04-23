@@ -20,11 +20,17 @@ already_done = []
 while True:
 	subreddit = r.get_subreddit('frugalmalefashion')
 	for submission in subreddit.get_new(limit=10):
+		# get post body and title
 		op_body = submission.selftext.lower()
 		op_title = submission.title.lower()
 		op = op_body + " " + op_title
+
+		# check if post title or body has a search value 
 		has_search = any(string in op for string in search)
 		if submission.id not in already_done and has_search:
-			print submission.short_link
+			# create and send message
+			msg = '[%s](%s)' % (op_title, submission.short_link)
+			r.send_message('Menschy28', op_title, msg)
 			already_done.append(submission.id)
-	time.sleep(1800)
+	# wait for 15mins
+	time.sleep(900)
