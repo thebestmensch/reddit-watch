@@ -12,4 +12,8 @@ Requirements
 
 Usage
 -----
-
+* Start the script
+```
+python main.py -k 'key1' -s 'subreddit1' -u 'username'
+```
+* Check your Reddit messages!
