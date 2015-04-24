@@ -1,6 +1,7 @@
 Reddit-Watch
 =========
 [![Build Status](https://travis-ci.org/JMensch/reddit-watch.svg?branch=master)](https://travis-ci.org/JMensch/reddit-watch)
+
 Subreddit keyword search and notification bot
 
 Requirements
