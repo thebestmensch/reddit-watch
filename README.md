@@ -2,7 +2,7 @@ Reddit-Watch
 =========
 [![Build Status](https://travis-ci.org/JMensch/reddit-watch.svg?branch=master)](https://travis-ci.org/JMensch/reddit-watch)
 
-Subreddit keyword search and notification bot
+Reddit bot that watches subreddit post title and bodies for specified keywords, and sends a Reddit message to the specified user if a match is found.
 
 Requirements
 ------------
@@ -11,8 +11,8 @@ Requirements
 
 Usage
 -----
-* Start the script
+Start the script
 ```
 python main.py -k 'key1' -s 'subreddit1' -u 'username'
 ```
-* Check your Reddit messages!
+Check your Reddit messages!
